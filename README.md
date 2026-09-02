@@ -2,6 +2,19 @@
 
 **▶ Play on itch.io: https://watermelonpeach.itch.io/boxal** (screenshots + free APK download)
 
+Solo-developed mobile roguelite — gameplay, meta-progression, UI, and tooling all built by one person.
+Unity 6000.4 (URP) · C# · Android.
+
+## Highlights
+
+- **`Tools/BalanceSim/`** — a standalone Python simulation of the round-by-round difficulty curve
+  (enemy HP/DPS requirements, boss gates), used to tune numbers *before* touching Unity. Not
+  something most solo/junior projects have.
+- **`Docs/`** — design docs written before implementation (growth system, meta-progression, core
+  loop, sound), not after-the-fact documentation.
+- Full ownership of the stack: roguelite upgrade draws, persistent meta-progression (currency,
+  shop, stamina/energy gating), a live global leaderboard (Unity Gaming Services), and all UI wiring.
+
 ## About this repository
 
 This is a **code-only extract** from Boxal's full Unity project, published for portfolio review.
