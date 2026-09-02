@@ -1,5 +1,7 @@
 # Boxal
 
+*[한국어로 보기 →](README.ko.md)*
+
 **▶ Play on itch.io: https://watermelonpeach.itch.io/boxal** (screenshots + free APK download)
 
 Solo-developed mobile roguelite — gameplay, meta-progression, UI, and tooling all built by one person.
