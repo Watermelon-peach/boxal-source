@@ -2,7 +2,7 @@
 
 [Gameplay video / GIF here]
 
-**▶ Play on itch.io: <link here>**
+**▶ Play on itch.io: https://watermelonpeach.itch.io/boxal**
 
 ## About this repository
 
