@@ -1,8 +1,6 @@
 # Boxal
 
-[Gameplay video / GIF here]
-
-**▶ Play on itch.io: https://watermelonpeach.itch.io/boxal**
+**▶ Play on itch.io: https://watermelonpeach.itch.io/boxal** (screenshots + free APK download)
 
 ## About this repository
 
