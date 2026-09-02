@@ -19,7 +19,7 @@ namespace Boxal.Game.UI
     ///         └ Count (획득 횟수 TMP)
     /// </summary>
     /// <remarks>
-    /// ★퍼즈 패널은 닫혀 있는 동안 비활성이라, 이 컴포넌트는 항상 활성인 호스트(MainPlayCanvas)에
+    /// 퍼즈 패널은 닫혀 있는 동안 비활성이라, 이 컴포넌트는 항상 활성인 호스트(MainPlayCanvas)에
     /// 붙이고 slotsContainer 참조로 접근한다(PauseUI/UpgradeCardUI와 동일 패턴).
     /// 비활성 오브젝트의 sprite/text를 바꿔두는 것은 문제없고, 다음에 열릴 때 그대로 보인다.
     /// </remarks>
@@ -49,7 +49,7 @@ namespace Boxal.Game.UI
 
         [Header("툴팁 (슬롯 홀드)")]
         [Tooltip("슬롯을 길게 누르면 뜨는 설명 패널. 평소 비활성. " +
-                 "★PopUps 바로 아래가 아니라 퍼즈 패널 안에 두어야 한다 — " +
+                 "PopUps 바로 아래가 아니라 퍼즈 패널 안에 두어야 한다 — " +
                  "PopUps의 직계 자식은 PopupDimController가 팝업으로 보고 Dim을 건드린다.")]
         [SerializeField] private GameObject tooltipPanel;
         [SerializeField] private TextMeshProUGUI tooltipNameText;

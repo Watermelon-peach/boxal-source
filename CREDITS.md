@@ -40,7 +40,7 @@
 | `BGM/KingBoss/KBF_3m_Battle_Boss_02.ogg` | Karugamo BGM | https://karugamobgm.com | **MIT** | 저작권 고지 필요 | 가능 |
 | `BGM/Title/KBF_3m_Field_Land_05.ogg` | Karugamo BGM | https://karugamobgm.com | **MIT** | 저작권 고지 필요 | 가능 |
 | `SFX/BoxmonBreak/750822__artninja__custom_short_explosion_impact_sound.wav` | custom_short_explosion_impact_sound / Artninja | https://freesound.org/s/750822/ | **CC BY 4.0** | **필요** | 가능 |
-| `SFX/BoxmonHit/BoxmonHit00~03.wav` | Sonniss #GameAudioGDC 2026 Bundle (편집·트림함) | https://sonniss.com | **Royalty-free** | 불필요 | 주의(아래 ★) |
+| `SFX/BoxmonHit/BoxmonHit00~03.wav` | Sonniss #GameAudioGDC 2026 Bundle (편집·트림함) | https://sonniss.com | **Royalty-free** | 불필요 | 주의(아래 ) |
 | `SFX/Charge/239503__luckylittleraven__going-up-and-down-chirp.wav` | going-up-and-down-chirp / luckylittleraven | https://freesound.org/s/239503/ | **CC BY 3.0** | **필요** | 가능 |
 | `SFX/Parry/118510__soneproject__cartbox-kick-drum.wav` | cartbox kick drum / soneproject | https://freesound.org/s/118510/ | **CC0** | 불필요 | 가능 |
 | `SFX/Jump/177848+crossbow.wav` ① | Modulated Ruler FX (Spring Jump Cartoon Noise) / Motion_S | https://freesound.org/s/177848/ | **CC BY 4.0** | **필요** | 가능 |
@@ -53,7 +53,7 @@
 **`SFX/Jump/177848+crossbow.wav`는 두 소스를 합친 파생 저작물이다.** freesound 177848(CC BY 4.0)과
 Shooting Sound 팩의 `crossbow.wav`를 믹스했다. 더 엄격한 조건인 CC BY가 결합물 전체에 적용되므로 크레딧이 필요하다.
 
-★**Sonniss 번들 재배포**: EULA는 "사운드를 **있는 그대로 판매**하는 것"을 금지한다(무상 배포를 명시적으로
+**Sonniss 번들 재배포**: EULA는 "사운드를 **있는 그대로 판매**하는 것"을 금지한다(무상 배포를 명시적으로
 금지하지는 않는다). Boxal의 파일은 트림·편집되어 프로젝트에 통합된 상태이므로 EULA가 명시적으로 허용하는
 "licensee project에 포함된 형태"에 해당한다. 다만 원본에 가까운 형태로 공개하는 것은 피하는 편이 안전하다.
 
@@ -88,16 +88,16 @@ Hints, Stars, Points & Rewards SFX Lite Pack
   by Cyberwave Orchestra
 ```
 
-★MIT는 "저작권 고지와 허가 문구를 사본에 포함"할 것을 요구한다. 위 Copyright 줄만으로 부족하다고 보는
+MIT는 "저작권 고지와 허가 문구를 사본에 포함"할 것을 요구한다. 위 Copyright 줄만으로 부족하다고 보는
 견해도 있어, **`Karugamo_LICENSE.txt` 전문을 Credits 화면에서 그대로 보여주는 것으로 해결했다**
 (2026-07-30, `SettingsPanelUI`). 이 파일이 빌드에 들어가려면 인스펙터의 `licenseFullText`에
 연결돼 있어야 한다 — `Assets/` 안에 있기만 해서는 빌드에 포함되지 않는다.
 
-★**표기 문구는 일부러 ASCII만 쓴다.** 프로젝트의 LilitaOne SDF 폰트는 ASCII 96자만 구운 정적 아틀라스라
+**표기 문구는 일부러 ASCII만 쓴다.** 프로젝트의 LilitaOne SDF 폰트는 ASCII 96자만 구운 정적 아틀라스라
 em dash(—)와 ©가 렌더되지 않는다(TMP 폴백도 0개). 위 블록에서 `-`를 쓴 것은 오타가 아니다.
 본문 폰트로 `LiberationSans SDF`(250자, — © 포함)를 쓰면 제약이 없어진다.
 
-★**Karugamo 공식 사이트 약관과 MIT는 서로 다르다.** 사이트(karugamobgm.com)의 이용약관은
+**Karugamo 공식 사이트 약관과 MIT는 서로 다르다.** 사이트(karugamobgm.com)의 이용약관은
 "양도·재배포 금지"라고 적혀 있지만, **우리가 받은 사본은 Unity 에셋 패키지판이고 거기에는 MIT 전문이
 동봉돼 있다.** 우리 사본에 적용되는 것은 동봉된 MIT다(더 넓은 허락). 나중에 이 표를 의심하게 되면
 사이트 약관이 아니라 `Karugamo_LICENSE.txt`를 근거로 볼 것.

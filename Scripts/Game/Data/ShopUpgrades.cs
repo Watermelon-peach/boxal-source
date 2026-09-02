@@ -21,7 +21,7 @@ namespace Boxal.Game
     /// 튜닝값은 아래 표 하나에 모여 있다. 저장 키는 <see cref="ShopUpgradeId"/> 이름이라
     /// enum 이름을 바꾸면 기존 저장이 초기화된다(순서/값 변경은 안전, 이름 변경만 주의).
     /// <para/>
-    /// ★<b>레벨 상한은 <see cref="ShopUpgradeId.StartAttack"/>에만 있다.</b> 골드·포인트는 무한이다
+    /// <b>레벨 상한은 <see cref="ShopUpgradeId.StartAttack"/>에만 있다.</b> 골드·포인트는 무한이다
     /// (상점을 점수 늘리는 엔드컨텐츠로 두기로 한 결정). 상한 유무로 갈리는 곳이 여럿이라
     /// 새로 다루는 코드는 <see cref="GetMaxLevel"/>/<see cref="HasMaxLevel"/>을 거칠 것 —
     /// 공통 상수(MaxLevel)는 더 이상 없다.
@@ -59,7 +59,7 @@ namespace Boxal.Game
 
         // 비용 = baseCost x growth^(현재 레벨). 10단위로 반올림해서 표시가 지저분해지지 않게 한다.
         //
-        // ★growth가 상한 유무로 갈린다.
+        // growth가 상한 유무로 갈린다.
         //   무한 축(골드·포인트) = 1.18. 골드 수급은 레벨당 +1로 선형인데 가격이 지수라 둘은 반드시
         //     벌어진다. growth가 높으면 그 지점이 금방 와서 "레벨이 안 오르는" 구간이 시작된다.
         //     1.55였을 때는 Lv15~20이 사실상 천장이었다(200판 굴려도 3종 합쳐 39레벨).

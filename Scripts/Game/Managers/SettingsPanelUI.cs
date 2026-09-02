@@ -13,7 +13,7 @@ namespace Boxal.Game.UI
     /// 이 클래스는 상태를 저장하지 않는다(표시와 입력만 담당).
     /// </summary>
     /// <remarks>
-    /// ★<see cref="UiPager"/>는 모든 페이지를 항상 활성으로 두고 컨테이너만 좌우로 민다.
+    /// <see cref="UiPager"/>는 모든 페이지를 항상 활성으로 두고 컨테이너만 좌우로 민다.
     /// 즉 OnEnable/OnDisable이 페이지 진입·이탈과 일치하지 않는다(씬 로드 때 1회씩만 발생).
     /// 그래서 초기화는 Start에서 1회, 디스크 저장은 "슬라이더에서 손을 뗀 순간"에 한다.
     /// </remarks>
@@ -37,7 +37,7 @@ namespace Boxal.Game.UI
         [SerializeField] private Toggle hapticToggle;
 
         [Header("Credits")]
-        [Tooltip("크레딧 본문을 표시할 텍스트. ★LilitaOne SDF는 ASCII 96자만 구운 정적 아틀라스라 " +
+        [Tooltip("크레딧 본문을 표시할 텍스트. LilitaOne SDF는 ASCII 96자만 구운 정적 아틀라스라 " +
                  "em dash(—)나 ©가 렌더되지 않는다. 본문은 LiberationSans SDF 사용을 권장.")]
         [SerializeField] private TextMeshProUGUI creditsText;
 
@@ -72,7 +72,7 @@ namespace Boxal.Game.UI
         /// <summary>
         /// 표시를 현재 저장값으로 다시 맞춘다(읽기만 하고 값을 쓰지는 않는다).
         /// 설정 페이지로 들어올 때마다 <see cref="HomeManager"/>가 호출한다.
-        /// ★진동은 퍼즈 팝업에도 같은 설정을 조작하는 토글이 있어, 한 번만 읽으면 표시가 뒤처질 수 있다.
+        /// 진동은 퍼즈 팝업에도 같은 설정을 조작하는 토글이 있어, 한 번만 읽으면 표시가 뒤처질 수 있다.
         /// 퍼즈 팝업이 열 때마다 재동기화하는 것과 같은 규칙을 여기서도 지킨다.
         /// </summary>
         public void SyncFromCurrent()
@@ -106,7 +106,7 @@ namespace Boxal.Game.UI
             slider.wholeNumbers = false;
 
             // 저장된 볼륨 → 슬라이더 위치(곡선의 역함수).
-            // ★SyncSlider가 SetValueWithoutNotify를 쓰는 이유: 그냥 value에 넣으면 초기화가 곧바로
+            // SyncSlider가 SetValueWithoutNotify를 쓰는 이유: 그냥 value에 넣으면 초기화가 곧바로
             //   onValueChanged를 때려 방금 읽은 값을 되쓰게 된다(곡선을 두 번 통과해 값이 어긋난다).
             SyncSlider(slider, label, target);
 
@@ -227,7 +227,7 @@ namespace Boxal.Game.UI
         /// <summary>
         /// 기본 크레딧 문구. 원본은 Assets/Boxal/Sounds/CREDITS.md 의 "게임 내 표기 문구" 블록이고,
         /// 오디오를 추가하면 양쪽을 같이 고쳐야 한다.
-        /// ★일부러 ASCII만 쓴다 — 프로젝트의 LilitaOne 폰트 아틀라스에 em dash(—)와 ©가 없어
+        /// 일부러 ASCII만 쓴다 — 프로젝트의 LilitaOne 폰트 아틀라스에 em dash(—)와 ©가 없어
         ///   그대로 넣으면 글자가 빠진 채로 렌더된다.
         /// </summary>
         private const string DefaultCredits =

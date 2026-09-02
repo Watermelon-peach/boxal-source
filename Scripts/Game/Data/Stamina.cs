@@ -241,7 +241,7 @@ namespace Boxal.Game
             }
 
             PlayerStats.SetStamina(next);
-            // ★anchor를 now로 밀면 안 된다. 회복 직전의 자투리 시간이 매번 버려져서,
+            // anchor를 now로 밀면 안 된다. 회복 직전의 자투리 시간이 매번 버려져서,
             //   앱을 자주 여닫는 유저만 회복이 느려진다. 소비한 만큼만 정확히 밀어야 한다.
             PlayerStats.StaminaAnchorUtc = anchor.AddSeconds((double)gained * RefillSeconds).Ticks;
             Changed?.Invoke();

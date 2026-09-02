@@ -7,7 +7,7 @@ namespace Boxal.Util
     /// 설정용 Toggle을 현재 값에 맞춰 초기화하고 변경 콜백을 연결한다.
     /// </summary>
     /// <remarks>
-    /// ★씬의 토글에는 <see cref="SwitchToggle"/>(손잡이 슬라이드 연출)이 붙어 있다. 이 연출은
+    /// 씬의 토글에는 <see cref="SwitchToggle"/>(손잡이 슬라이드 연출)이 붙어 있다. 이 연출은
     /// onValueChanged로만 갱신되고 OnEnable(=Start보다 먼저)에서 한 번 반영되므로,
     /// <see cref="Toggle.SetIsOnWithoutNotify"/>만 부르면 값과 스위치 위치가 어긋난 채 남는다.
     /// 설정 토글이 여러 화면(홈 설정 / 퍼즈 팝업)에 있어 이 처리를 한곳에 모은다.

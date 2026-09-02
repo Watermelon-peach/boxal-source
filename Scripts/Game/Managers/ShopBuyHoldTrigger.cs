@@ -11,14 +11,14 @@ namespace Boxal.Game.UI
     /// 아이템마다 하나씩 필요해 <see cref="ShopItemUI"/>가 수집 시점에 자동으로 붙인다.
     /// </summary>
     /// <remarks>
-    /// ★<see cref="Button"/>의 onClick을 쓰지 않고 이 트리거가 입력을 전부 가져간다.
+    /// <see cref="Button"/>의 onClick을 쓰지 않고 이 트리거가 입력을 전부 가져간다.
     /// 둘 다 쓰면 한 번 탭할 때 onClick과 첫 반복이 겹쳐 두 번 구매된다.
     /// <para/>
-    /// ★버튼이 페이저(<see cref="Boxal.Util.UiPager"/>) 안에 있어서, 눌린 채로 좌우로 끌면
+    /// 버튼이 페이저(<see cref="Boxal.Util.UiPager"/>) 안에 있어서, 눌린 채로 좌우로 끌면
     /// 페이지를 넘기려는 동작이다. <see cref="PointerEventData.dragging"/>이 서면 반복을 멈춘다
     /// (<see cref="UpgradeSlotHoldTrigger"/>가 스크롤과 롱프레스를 가르는 것과 같은 방식).
     /// <para/>
-    /// ★간격을 점점 좁혀서(first → interval → minInterval) 오래 누를수록 빨라지게 한다.
+    /// 간격을 점점 좁혀서(first → interval → minInterval) 오래 누를수록 빨라지게 한다.
     /// 처음부터 빠르면 한 번만 사려던 사람이 실수로 여러 레벨을 사게 된다.
     /// </remarks>
     public class ShopBuyHoldTrigger : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler

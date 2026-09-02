@@ -72,7 +72,7 @@ namespace Boxal.Game.UI
         /// <summary>
         /// 지금 퍼즈를 걸어도 되는지. 뒤로가기 키는 버튼과 달리 화면을 가린 패널을 무시하고 들어오므로
         /// 여기서 직접 막아야 한다.
-        /// ★특히 레벨업 카드/보스 보상이 떠 있을 때가 위험하다. 그 둘은 이미 timeScale=0으로
+        /// 특히 레벨업 카드/보스 보상이 떠 있을 때가 위험하다. 그 둘은 이미 timeScale=0으로
         /// 게임을 세워둔 상태라, 그 위에 퍼즈를 열었다 닫으면 Hide()가 timeScale을 1로 되돌려
         /// 선택 중인데 게임이 다시 굴러간다.
         /// </summary>
@@ -211,7 +211,7 @@ namespace Boxal.Game.UI
         }
 
         /// <summary>종료 확인 팝업을 띄운다.
-        /// ★퍼즈 패널은 잠시 감춘다 — 공용 Dim(<see cref="PopupDimController"/>)이 "동시에 뜨는 팝업은 하나"를
+        /// 퍼즈 패널은 잠시 감춘다 — 공용 Dim(<see cref="PopupDimController"/>)이 "동시에 뜨는 팝업은 하나"를
         /// 전제로 첫 번째 활성 자식의 농도를 쓰는데, 퍼즈는 농도 0이라 겹쳐 두면 확인창 뒤가 안 어두워진다.</summary>
         private void ShowQuitConfirm()
         {

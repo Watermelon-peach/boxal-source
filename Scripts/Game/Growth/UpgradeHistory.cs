@@ -13,7 +13,7 @@ namespace Boxal.Game.Growth
     /// 서로 다른 풀이라, 양쪽이 공통으로 기록할 자리가 필요해 별도로 둔다.
     /// 런 한정 데이터라 세이브하지 않으며, 재시작 시 <see cref="Clear"/>로 비운다.
     ///
-    /// ★Enter Play Mode에서 도메인 리로드를 끄면 static 필드가 세션 간 살아남으므로,
+    /// Enter Play Mode에서 도메인 리로드를 끄면 static 필드가 세션 간 살아남으므로,
     /// 진입 시점에 한 번 초기화해 이전 판의 목록이 남지 않게 한다(HapticManager와 같은 방식).
     /// </remarks>
     public static class UpgradeHistory

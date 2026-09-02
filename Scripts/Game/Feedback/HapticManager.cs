@@ -21,7 +21,7 @@ namespace Boxal.Game.Feedback
     /// 햅틱(진동) 재생의 단일 진입점. 오디오와 달리 GameObject가 필요 없어 정적 클래스로 둔다.
     /// </summary>
     /// <remarks>
-    /// ★NiceVibrations의 <see cref="HapticController.hapticsEnabled"/>는 단순 static 필드라
+    /// NiceVibrations의 <see cref="HapticController.hapticsEnabled"/>는 단순 static 필드라
     /// 앱을 재시작하면 true로 돌아간다. 그래서 플레이어의 on/off 선택은 여기서 PlayerPrefs에 저장하고
     /// 시작 시 다시 적용한다(<see cref="Init"/>).
     /// 햅틱은 실기기에서만 동작하며 에디터에서는 아무 일도 일어나지 않는다(정상).

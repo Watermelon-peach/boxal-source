@@ -12,7 +12,7 @@
 
 | # | 사운드 | 연결 위치 | 비고 |
 |---|---|---|---|
-| 1 | **박스몬 파괴** | `Boxmon.BreakBox()` | ★가장 중요하고 가장 자주 울림. 아래 주의사항 참고 |
+| 1 | **박스몬 파괴** | `Boxmon.BreakBox()` | 가장 중요하고 가장 자주 울림. 아래 주의사항 참고 |
 | 2 | **점프** | `ChargeJump.ReleaseJump()` | 짧고 가벼운 소리 |
 | 3 | **차징** | `ChargeJump.StartCharge()` | 루프. 뗄 때 정지 |
 | 4 | **패링 성공** | `Parrying.ParryWindow()` 성공 분기 | 타격감 핵심. `SpinBurst` 연출과 동시 |
@@ -39,7 +39,7 @@
 |---|---|---|---|
 | 16 | **보스 보상 등장** | `BossRewardManager.OfferReward()` | Legendary 등장 팡파레 |
 | 17 | **보상 획득** | `ClaimReward()` | |
-| 18 | **한방컷 경고(LowHP)** | `AlertManager.UpdateLowHpAlert()` | ★상태 기반. 아래 주의사항 참고 |
+| 18 | **한방컷 경고(LowHP)** | `AlertManager.UpdateLowHpAlert()` | 상태 기반. 아래 주의사항 참고 |
 | 19 | **신기록** | `GameOverUI` NewRecord 분기 | |
 | 20 | **UI 버튼 클릭** | 공용 | 1개로 전 버튼 공용 가능 |
 | 21 | **팝업 열림/닫힘** | 퍼즈/닉네임/보상 공용 | |

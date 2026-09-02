@@ -20,23 +20,23 @@ namespace Boxal.Game.UI
     /// 설명을 다 읽은 뒤에야 아무것도 안 가린 화면에서 연습하게 된다.
     /// </summary>
     /// <remarks>
-    /// ★<b>라운드가 아직 시작되지 않은 상태에서 돈다.</b> <see cref="GameManager"/>가 첫 판에 한해
+    /// <b>라운드가 아직 시작되지 않은 상태에서 돈다.</b> <see cref="GameManager"/>가 첫 판에 한해
     /// <see cref="RoundManager.StartRound"/> 호출을 이 튜토리얼이 끝날 때까지 미룬다.
     /// 예전처럼 라운드가 굴러가는 채로 안내를 띄우면, 읽는 동안 무기가 몹을 깨서 XP가 쌓이고
     /// <b>레벨업 카드가 안내 위로 튀어나온다</b>(<c>Boxmon.BreakBox</c>가 처치 시 킬·점수·XP를 한 번에 준다).
     /// 그래서 "미루기"가 이 기능의 핵심이고, 덕분에 타이머 정지 같은 장치가 전부 필요 없어졌다.
     /// <para/>
-    /// ★<b>연습용 더미는 HP를 아주 크게 준다</b>(<see cref="dummyHp"/>). 무기에 깨지지 않아야
+    /// <b>연습용 더미는 HP를 아주 크게 준다</b>(<see cref="dummyHp"/>). 무기에 깨지지 않아야
     /// 보상·XP가 새지 않고, 막기는 어차피 죽이는 게 아니라 위로 튕겨내는 것이라 몇 번이든 반복된다.
     /// 끝낼 때는 <see cref="SpawnManager.Despawn"/>으로 조용히 치운다(처치 경로를 안 타므로 보상 0).
     /// <para/>
-    /// ★<b>화면은 스포트라이트 + 씬 패널의 조합이다.</b>
+    /// <b>화면은 스포트라이트 + 씬 패널의 조합이다.</b>
     /// 어둡게 덮고 대상 버튼만 뚫는 Dim 4조각은 버튼 위치에서 계산되는 것이라 런타임 생성이고,
     /// 그 위에 올라가는 <b>설명 문구·참고 이미지·버튼은 사용자가 씬에서 직접 만들어 배치한다</b>
     /// (<see cref="jumpPanel"/>/<see cref="parryPanel"/>). 패널은 자동으로 Dim 위로 올려주므로
     /// 계층 어디에 두든 가려지지 않는다.
     /// <para/>
-    /// ★패널이나 버튼이 연결되지 않았으면 튜토리얼을 통째로 건너뛰고 바로 게임이 시작된다
+    /// 패널이나 버튼이 연결되지 않았으면 튜토리얼을 통째로 건너뛰고 바로 게임이 시작된다
     /// (배선 전에도 게임이 멀쩡히 돌아가야 하므로).
     /// </remarks>
     public class TutorialHintUI : MonoBehaviour
@@ -184,7 +184,7 @@ namespace Boxal.Game.UI
         {
             onFinished = finishedCallback;
 
-            // ★씬에서 Tutorial 루트 자체가 꺼진 채로 저장돼도 여기서 강제로 켠다.
+            // 씬에서 Tutorial 루트 자체가 꺼진 채로 저장돼도 여기서 강제로 켠다.
             // 부모가 꺼져 있으면 자식에 SetActive(true)를 해도 화면에 안 나타나므로(activeInHierarchy),
             // 개별 패널만 열심히 켜봤자 이 한 줄이 없으면 튜토리얼이 통째로 안 뜨는 사고가 난다.
             if (tutorialRoot != null)
@@ -206,7 +206,7 @@ namespace Boxal.Game.UI
         /// 설명 단계(점프/막기)로 전환한다. 패널 하나만 켜고 스포트라이트를 그 버튼으로 옮긴다.
         /// </summary>
         /// <remarks>
-        /// ★<b>이 단계는 게임을 멈춘다</b>(<c>Time.timeScale = 0</c>). 읽기만 하는 단계라 조작이
+        /// <b>이 단계는 게임을 멈춘다</b>(<c>Time.timeScale = 0</c>). 읽기만 하는 단계라 조작이
         /// 반응할 필요가 없고, 오히려 캐릭터·더미가 화면에서 계속 움직이면 집중을 방해한다.
         /// 연습 단계(<see cref="ShowPracticeStep"/>)에서 다시 풀어준다 — 거기서는 실제로 조작해야
         /// 하므로 <see cref="ChargeJump"/>의 충전(Time.deltaTime 기반)과 물리가 살아있어야 한다.

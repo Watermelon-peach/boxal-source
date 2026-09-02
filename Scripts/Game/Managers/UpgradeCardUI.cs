@@ -19,7 +19,7 @@ namespace Boxal.Game.UI
     /// (즉 "자동으로 넘어가기 직전에 개입할 수 있는" 구조다).
     /// </summary>
     /// <remarks>
-    /// ★패널이 떠 있는 동안은 timeScale=0이므로 카운트다운은 반드시 unscaled 시간을 쓴다
+    /// 패널이 떠 있는 동안은 timeScale=0이므로 카운트다운은 반드시 unscaled 시간을 쓴다
     /// (<see cref="BossRewardUI"/>의 자동 닫힘과 같은 규칙).
     /// </remarks>
     public class UpgradeCardUI : MonoBehaviour

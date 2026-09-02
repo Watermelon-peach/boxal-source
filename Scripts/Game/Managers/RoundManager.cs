@@ -73,14 +73,14 @@ namespace Boxal.Game
 
                 yield return null;
             }
-            // ★위 IsGameOver 검사는 루프 안에만 있어서, 타이머 만료로 루프를 빠져나온 경로에는 걸리지 않는다.
+            // 위 IsGameOver 검사는 루프 안에만 있어서, 타이머 만료로 루프를 빠져나온 경로에는 걸리지 않는다.
             // 여기서 다시 확인하지 않으면 라운드 종료 직전에 죽었을 때 게임오버 패널 뒤에서 StartRound가
             // 돌아 다음 라운드가 시작된다(라운드 시작음 + 새 몹 스폰).
             if (GameManager.Instance.IsGameOver)
                 yield break;
 
             // 타이머 만료: 왕보스 라운드였는데 여기 도달 = 왕보스 미처치(처치 시 위에서 조기 탈출) → 게임오버
-            // ★단, currentEnemies는 디스폰 연출(despawnDelay 2초) 후에야 감소하므로 그것만 믿으면
+            // 단, currentEnemies는 디스폰 연출(despawnDelay 2초) 후에야 감소하므로 그것만 믿으면
             // 28~30초 사이에 처치해도 "미처치"로 오판해 억울한 게임오버가 난다. 처치 즉시 제거되는
             // aliveBoxmons에서 왕보스 생존 여부를 직접 확인한다.
             if (currentRoundIsKingBoss)

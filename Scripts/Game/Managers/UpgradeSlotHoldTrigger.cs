@@ -11,14 +11,14 @@ namespace Boxal.Game.UI
     /// 슬롯마다 하나씩 필요해 <see cref="UpgradeHistoryUI"/>가 수집 시점에 자동으로 붙인다.
     /// </summary>
     /// <remarks>
-    /// ★ScrollRect 안에서 쓰이므로 스크롤 드래그와 구분해야 한다. 목록을 넘기려고 끌었을 뿐인데
+    /// ScrollRect 안에서 쓰이므로 스크롤 드래그와 구분해야 한다. 목록을 넘기려고 끌었을 뿐인데
     /// 툴팁이 뜨면 안 되므로, 누르는 동안 <see cref="PointerEventData.dragging"/>을 지켜보다
     /// 드래그가 시작되면 취소한다(EventSystem이 같은 PointerEventData 인스턴스를 갱신하므로
     /// 눌린 뒤에 읽어도 현재 상태가 나온다).
     ///
-    /// ★홀드 시간은 unscaled 시간으로 잰다 — 퍼즈 중에는 timeScale=0이라 스케일 시간이 흐르지 않는다.
+    /// 홀드 시간은 unscaled 시간으로 잰다 — 퍼즈 중에는 timeScale=0이라 스케일 시간이 흐르지 않는다.
     ///
-    /// ★대상 오브젝트에 raycastTarget이 켜진 Graphic(Image 등)이 있어야 포인터 이벤트가 들어온다.
+    /// 대상 오브젝트에 raycastTarget이 켜진 Graphic(Image 등)이 있어야 포인터 이벤트가 들어온다.
     /// </remarks>
     public class UpgradeSlotHoldTrigger : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {

@@ -9,8 +9,8 @@ namespace Boxal.Game.UI
     /// 각 팝업이 자기 Dim을 들고 있던 것을 하나로 합친 것이라, 팝업 스크립트들은 이 존재를 몰라도 된다
     /// (활성 상태에서 파생시키므로 Show/Hide 경로를 빠뜨려 Dim이 남는 사고가 없다).
     ///
-    /// ★Dim은 SafeArea 밖에 있어야 한다. 안에 두면 노치/제스처바 영역만 어두워지지 않아 띠가 남는다.
-    /// ★Dim Image의 CanvasRenderer에서 Cull Transparent Mesh를 꺼둘 것. 켜져 있으면 알파 0일 때
+    /// Dim은 SafeArea 밖에 있어야 한다. 안에 두면 노치/제스처바 영역만 어두워지지 않아 띠가 남는다.
+    /// Dim Image의 CanvasRenderer에서 Cull Transparent Mesh를 꺼둘 것. 켜져 있으면 알파 0일 때
     ///   메시가 컬링되고, GraphicRaycaster는 컬링된 그래픽을 건너뛰므로 입력 차단까지 같이 사라진다
     ///   (퍼즈처럼 "안 보이지만 입력은 막는" 용도가 통째로 무력화된다).
     /// </summary>

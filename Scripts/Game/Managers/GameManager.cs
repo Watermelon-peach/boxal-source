@@ -98,7 +98,7 @@ namespace Boxal.Game
             //초반 체력 세팅
             Player.Instance.PlayerInitSettings();
 
-            // ★첫 판 튜토리얼이 뜰 상황이면 라운드 시작을 튜토리얼이 끝날 때까지 미룬다.
+            // 첫 판 튜토리얼이 뜰 상황이면 라운드 시작을 튜토리얼이 끝날 때까지 미룬다.
             // 미루지 않으면 안내를 읽는 동안 무기가 몹을 깨서 XP가 쌓이고, 레벨업 카드가
             // 안내 위로 튀어나온다(Boxmon.BreakBox가 처치 시 킬·점수·XP를 한 번에 준다).
             runTutorialAfterIntro = TutorialHintUI.WillRun;
@@ -139,7 +139,7 @@ namespace Boxal.Game
 
         public void GameOver()
         {
-            // ★재진입 차단. 왕보스 타임아웃 게임오버는 플레이어를 죽이지 않으므로, 그 뒤에도 살아 있는
+            // 재진입 차단. 왕보스 타임아웃 게임오버는 플레이어를 죽이지 않으므로, 그 뒤에도 살아 있는
             // 플레이어가 왕보스에 깔려 Player.Die()가 여기를 한 번 더 부른다(게임오버가 두 번 뜨던 버그).
             // 두 번 들어오면 GameOverUI.Show가 다시 돌아 누적 처치 수와 리더보드 제출까지 중복된다.
             if (IsGameOver)

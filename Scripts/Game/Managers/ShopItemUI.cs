@@ -26,7 +26,7 @@ namespace Boxal.Game.UI
     ///       └ DisplayName (TMP) 고정 텍스트 — 건드리지 않음
     /// </code>
     /// <para/>
-    /// ★<see cref="ShopUpgrades.Changed"/>와 <see cref="Gold.Changed"/>를 직접 구독한다.
+    /// <see cref="ShopUpgrades.Changed"/>와 <see cref="Gold.Changed"/>를 직접 구독한다.
     /// 구매 한 번에 레벨과 잔액이 같이 바뀌므로 둘 다 필요하다(가격이 매 레벨 갱신되는 것도 이 경로다).
     /// static 이벤트라 반드시 짝을 맞춰 해제한다.
     /// </remarks>

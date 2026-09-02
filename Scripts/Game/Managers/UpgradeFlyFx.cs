@@ -14,13 +14,13 @@ namespace Boxal.Game.UI
     /// (b) <b>퍼즈를 누르면 고른 업그레이드를 다시 볼 수 있다</b>는 걸 암시한다
     /// (퍼즈의 획득 목록 = <see cref="UpgradeHistoryUI"/>). 그래서 도착 지점이 퍼즈 버튼이다.
     /// <para/>
-    /// ★<b>씬에 배치하지 않는다.</b> 첫 호출 때 캔버스 아래에 스스로를 만들고, 그 뒤로는
+    /// <b>씬에 배치하지 않는다.</b> 첫 호출 때 캔버스 아래에 스스로를 만들고, 그 뒤로는
     /// 껐다 켜며 재사용한다(판당 생성 1회). 씬 파일을 건드리지 않으려는 의도이기도 하다 —
     /// 이 프로젝트는 아트/레이아웃을 사용자가 잡으므로 스크립트가 씬에 오브젝트를 남기지 않는다.
     /// 나중에 테두리·글로우 같은 걸 붙이고 싶으면 <see cref="Create"/> 하나만
     /// 프리팹 <c>Instantiate</c>로 바꾸면 되고 나머지는 그대로 쓸 수 있다.
     /// <para/>
-    /// ★<b>전부 unscaled 시간으로 돈다.</b> <see cref="UpgradeManager.SelectChoice"/>는 대기 중인
+    /// <b>전부 unscaled 시간으로 돈다.</b> <see cref="UpgradeManager.SelectChoice"/>는 대기 중인
     /// 레벨업이 더 있으면 <c>timeScale=0</c>을 유지한 채 다음 카드를 바로 띄운다. scaled 시간을 쓰면
     /// 그 구간에서 연출이 그대로 얼어붙는다(SceneFader와 같은 규칙).
     /// </remarks>
