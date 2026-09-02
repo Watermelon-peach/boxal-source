@@ -46,9 +46,9 @@
 | `SFX/Jump/177848+crossbow.wav` ① | Modulated Ruler FX (Spring Jump Cartoon Noise) / Motion_S | https://freesound.org/s/177848/ | **CC BY 4.0** | **필요** | 가능 |
 | `SFX/Jump/177848+crossbow.wav` ② | crossbow.wav / 4crain (Shooting Sound 팩) | Unity Asset Store — Shooting Sound | 무료·사용 자유, **재판매 금지** | 불필요 | 믹스본이라 무방 |
 | `SFX/PlayerHit/593909__newlocknew__crushing-kick_1-x317lrs.wav` | Crushing kick_1 x3(17lrs) / newlocknew | https://freesound.org/s/593909/ | **CC BY 4.0** | **필요** | 가능 |
-| `SFX/LevelUp/Magic Score 5.wav` | Cyberwave Orchestra | [Asset Store 295538](https://assetstore.unity.com/packages/audio/sound-fx/hints-stars-points-rewards-sound-effects-lite-pack-295538) | **Unity AS 표준 EULA (무료)** | 불필요 | ⚠️**불가** |
-| `SFX/CardSelect/Magic Score 9.wav` | Cyberwave Orchestra | 위와 동일 | **Unity AS 표준 EULA (무료)** | 불필요 | ⚠️**불가** |
-| `SFX/GameOver/Mysterious Chapter.wav` | Cyberwave Orchestra | 위와 동일 | **Unity AS 표준 EULA (무료)** | 불필요 | ⚠️**불가** |
+| `SFX/LevelUp/Magic Score 5.wav` | Cyberwave Orchestra | [Asset Store 295538](https://assetstore.unity.com/packages/audio/sound-fx/hints-stars-points-rewards-sound-effects-lite-pack-295538) | **Unity AS 표준 EULA (무료)** | 불필요 | **불가** |
+| `SFX/CardSelect/Magic Score 9.wav` | Cyberwave Orchestra | 위와 동일 | **Unity AS 표준 EULA (무료)** | 불필요 | **불가** |
+| `SFX/GameOver/Mysterious Chapter.wav` | Cyberwave Orchestra | 위와 동일 | **Unity AS 표준 EULA (무료)** | 불필요 | **불가** |
 
 **`SFX/Jump/177848+crossbow.wav`는 두 소스를 합친 파생 저작물이다.** freesound 177848(CC BY 4.0)과
 Shooting Sound 팩의 `crossbow.wav`를 믹스했다. 더 엄격한 조건인 CC BY가 결합물 전체에 적용되므로 크레딧이 필요하다.
@@ -112,7 +112,7 @@ em dash(—)와 ©가 렌더되지 않는다(TMP 폴백도 0개). 위 블록에�
 | **CC BY** (Attribution) | 가능 | **필수** | 가능(고지 유지) |
 | **MIT** | 가능 | 저작권 고지 필요 | 가능(고지 유지) |
 | **Sonniss GDC 번들** | 가능 | 불필요 | 원본 그대로 판매 금지 |
-| **Unity Asset Store 표준 EULA** | 게임에 사용 가능 | 불필요 | ⚠️ **불가** — 빌드 포함만 허용 |
+| **Unity Asset Store 표준 EULA** | 게임에 사용 가능 | 불필요 | **불가** — 빌드 포함만 허용 |
 | **CC BY-NC** | **불가** | - | - |
 
 ## 새 오디오를 추가할 때

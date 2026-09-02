@@ -56,8 +56,8 @@ GameOverUI.Show()
 
 | 위치 | 씬 | 배선 상태 |
 |---|---|---|
-| 홈 `MainPanel/ResourceBars/ResourceBar_Golds` | Home | ✅ `GoldBarUI` 부착. `Text_Value`=계정 잔액(`Gold.Balance`, `Gold.Changed` 구독). `Button_Add`는 상점 페이지(`UiPager.GoToPage`)로 이동하게 만들어 뒀으나 **상점 패널이 아직 없어 `pager` 참조가 비어 있고 버튼은 비활성 상태.** 상점 패널 완성 시 `pager`만 연결하면 됨. |
-| 플레이 `HUD/ResourceBar_Golds` | PlayScene | ✅ `UiManager.goldUi`에 `Text_Value` 연결. 판중 `RunGold`가 킬마다 실시간으로 오른다(계정 잔액과는 다른 값이니 혼동 주의). `Button_Add`는 판중에 갈 곳이 없어 **사용자가 직접 제거함.** |
+| 홈 `MainPanel/ResourceBars/ResourceBar_Golds` | Home | `GoldBarUI` 부착. `Text_Value`=계정 잔액(`Gold.Balance`, `Gold.Changed` 구독). `Button_Add`는 상점 페이지(`UiPager.GoToPage`)로 이동하게 만들어 뒀으나 **상점 패널이 아직 없어 `pager` 참조가 비어 있고 버튼은 비활성 상태.** 상점 패널 완성 시 `pager`만 연결하면 됨. |
+| 플레이 `HUD/ResourceBar_Golds` | PlayScene | `UiManager.goldUi`에 `Text_Value` 연결. 판중 `RunGold`가 킬마다 실시간으로 오른다(계정 잔액과는 다른 값이니 혼동 주의). `Button_Add`는 판중에 갈 곳이 없어 **사용자가 직접 제거함.** |
 
 **홈 바와 플레이 바는 같은 이름(`ResourceBar_Golds`)이지만 보여주는 값이 다르다.**
 홈 = 계정 잔액(누적), 플레이 = 이번 판 임시 누적. 새로 손댈 때 헷갈리지 않도록 주의.
