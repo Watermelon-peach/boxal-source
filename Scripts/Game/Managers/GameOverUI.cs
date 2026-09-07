@@ -130,6 +130,11 @@ namespace Boxal.Game.UI
 
         private void OnRestart()
         {
+            // HomeManager.OnPlay()와 동일한 게이트. 여기 없으면 게임오버->Restart 반복으로
+            // 스태미나 1회분만으로 무한 재도전이 가능해진다.
+            if (!Stamina.TryConsume())
+                return;
+
             GameManager.Instance.OnGameStart();
         }
 
